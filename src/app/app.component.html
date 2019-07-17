@@ -1,0 +1,53 @@
+<header>
+  <div class="row flex-nowrap">
+    <div class="col-sm-6 col-xs-6">
+      <img src="../assets/Logo.svg" alt="logo bamba">
+    </div>
+    <div class="col-sm-6 col-xs-6" id="contact">
+      <div id="box">
+        <span>CONTACT US</span> <br>
+        <span>+1 888-544-4781</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="container-full section2">
+  
+  <div class="login-nav">
+    <nav>
+      <div class="left" routerLink="/login" routerLinkActive="active"><a>LOG IN</a></div>
+      <div class="right" routerLink="/register" routerLinkActive="active"><a >NEW AGENCY</a></div>     
+    </nav>
+    <router-outlet></router-outlet> 
+  </div>
+</section>
+
+<footer>
+  <div class="container-full columns row">    
+      <ul class="column">
+        <li *ngFor="let i of column1">{{i}}</li>    
+      </ul>
+      <ul class="column">
+        <li *ngFor="let i of column2">{{i}}</li>
+      </ul>
+      <ul class="column">
+        <li *ngFor="let i of column3">{{i}}</li>
+      </ul>
+      <ul class="column">
+        <div class="rss">
+          <img src="../assets/fb.png" alt="facebook">
+          <img src="../assets/instagram.png" alt="instagram">
+          <img src="../assets/wa.png" alt="WhatsApp">
+        </div>
+        <li *ngFor="let i of column4">{{i}}</li>
+      </ul>      
+  </div>
+    <img src="../assets/Logo.svg" alt="logo bamba" id="logo">
+    <hr>
+    <div class="container-full" id="copy">
+      <span>Copyright © 2019. All rights reserved.</span>
+    </div>
+</footer>
+
+

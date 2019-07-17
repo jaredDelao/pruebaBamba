@@ -1,0 +1,29 @@
+.container {
+    padding: 7%;
+    font-family: 'Lato', Arial;
+}
+
+#welcome {
+    font-size: 18px;
+    color: #323636;
+    font-weight: bold;
+}
+
+#text {
+    font-weight: lighter;
+    color: #666;
+    margin-bottom: 10%;
+}
+
+button {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #2FC1D1;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px #ccc;
+    font-family: 'Khand', Arial;
+    letter-spacing: 1px;
+}

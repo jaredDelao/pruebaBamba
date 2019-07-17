@@ -1,0 +1,188 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Lato', Arial;
+    outline-style: none!important;
+}
+
+header {
+    padding: 2% 4%;
+}
+
+header img {
+    width: 190px;
+}
+
+header #contact #box {
+    width: auto;
+    float: right;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #75787B;
+    line-height: 15px;
+}
+
+header #contact #box span:first-child {
+    font-size: 12px;
+}
+header #contact #box span:last-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .col-sm-6 {
+    height: auto;
+}
+
+
+
+/**SECTION 2 **/
+section {
+    position: relative;
+    height: 80vh;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.login-nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 30%;
+}
+
+.login-nav nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    height: auto;
+    padding: 4% 4%;
+    box-shadow: 0px 1px 6px #ccc;
+}
+
+.login-nav nav div {
+    padding-bottom: 2%;
+}
+.login-nav nav div:hover {
+    cursor: pointer;
+}
+
+.login-nav nav a {
+    color: #2FC1D1;
+}
+
+.login-nav nav div {
+    width: 50%;
+    text-align: center;
+}
+
+.section {
+    position: relative;
+}
+.section2 img {
+    width: 100%;
+    display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+/**FOOTER**/
+footer {
+    background: #323636;
+    margin-top: 5%;
+    padding: 7% 5%
+}
+footer .columns {    
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    color: #F7F7F8;
+    width: 100%;
+}
+footer ul li {
+    list-style: none;
+}
+
+footer #logo {
+    width: 192px;
+    margin: 2% 7%;   
+}
+footer hr {
+    background-color: #75787B;
+}
+footer #copy {
+    float: right;
+    color: #F7F7F8;
+}
+footer #copy span {
+    width: auto;
+}
+.active {
+    border-bottom: 2px solid #2FC1D1;
+    color: #2FC1D1; 
+}
+
+footer .rss {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+footer .rss img {
+    width: 30px;    
+}
+
+
+
+/**MEDIA QUERIES**/
+@media only screen and (max-width: 1100px) {
+    .login-nav {
+        width: 40%;
+    }
+    footer #logo {
+        width: 150px;
+        margin: 2% 5%;   
+    }
+}
+
+@media only screen and (max-width: 900px) {
+   footer ul li {
+       font-size: 12px;
+   }
+   #copy {
+       font-size: 12px;
+   }
+   footer #logo {
+    width: 125px;
+    margin: 2% 5%;   
+}
+}
+
+@media only screen and (max-width: 750px) {
+    .login-nav {
+        width: 55%;
+    }
+    header img {
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    footer .columns {
+        font-size: 5px;
+    }
+ }
+
+@media only screen and (max-width: 500px) {
+    .login-nav {
+        width: 65%;
+    }
+}

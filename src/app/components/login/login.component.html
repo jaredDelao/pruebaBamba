@@ -1,0 +1,25 @@
+<div class="container" >
+    <p id="welcome">Welcome!</p>
+    <p id="text">Log in to access our bamba agent booking site:</p>
+
+    <form #formLogin="ngForm" (ngSubmit)="onSubmit()">
+        <div class="input-group mb-3">
+            <input type="text" placeholder="Email / Username" required
+                    [(ngModel)]="login.user" name="user" #user="ngModel">
+             <span *ngIf="!user.valid && user.touched">El usuario es obligatorio</span>
+                     
+        </div>
+        <div class="input-group mb-3">
+            <input type="password" placeholder="Password" required
+                   [(ngModel)]="login.password" name="password" #password="ngModel">
+            <span *ngIf="!password.valid && password.touched">Ingresa una contraseña</span>                   
+        </div>
+
+        <div class="forgot">
+            <p>Forgot your password?</p>
+        </div>
+        
+
+        <button >LOG IN</button>
+    </form>
+</div>
